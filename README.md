@@ -23,3 +23,24 @@ Feed Apartment tables data real time in data lake and create real time online an
     "token": "QpwL5tke4Pnpja7X"
 }
 ```
+
+## Login
+
+### Request
+**Method:** POST
+
+**EndPoint:** <http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/login>
+
+**Data:**
+```
+{
+    "email": "peter@klaven",
+    "password": "cityslicka"
+}
+```
+### Response
+```
+{
+    "token": "QpwL5tke4Pnpja7X"
+}
+```
