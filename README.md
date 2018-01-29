@@ -6,18 +6,18 @@ Feed Apartment tables data real time in data lake and create real time online an
 ### Register
 
 #### Request
-**Method:** POST
+...**Method:** POST
 
-**EndPoint:** <http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/register>
+...**EndPoint:** <http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/register>
 
-**Data:**
+...**Data:**
 
-`
-{
-    "email": "sydney@fife",
-    "password": "pistol"
-}
-`
+...```
+...{
+...    "email": "sydney@fife",
+...    "password": "pistol"
+...}
+...```
 
 #### Response
 
