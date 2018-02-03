@@ -45,6 +45,13 @@ Feed Apartment tables data real time in data lake and create real time online an
 }
 ```
 
+## Pagination
+
+**Parameter:** per_page
+**Default Value:** 0
+
+**Parameter:** page
+
 Resource Name | Endpoints
 ----------|----------
 Apartment Maintenance | Apartment List <br> Method: GET <br> <http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/Apartment_Maintenance><br><br>Single Apartment<br>Method:GET<br><http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/Apartment_Maintenance/1><br><br> Create Apartment <br>Method:POST<br> <http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/Apartment_Maintenance><br><br> Update Apartment <br>Method:PUT<br> <http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/Apartment_Maintenance/1><br><br> Delete Apartment<br>Method: DELETE<br> <http://reqres-apartmentrental.1d35.starter-us-east-1.openshiftapps.com/api/Apartment_Maintenance/1>

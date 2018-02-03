@@ -93,6 +93,26 @@ function returnAll(items, req, res) {
 		pageSize = parseInt(req.query.per_page, 10) || config.pagination.page_size,
 		offset = (page - 1) * pageSize,
 		paginatedItems = items.slice(offset, offset + pageSize);
+		var filteredItems;
+		var key = Object.keys(req.query)[0];
+		var value = req.query[key];
+		if(pageSize === 0){
+			var filteredItems;
+			var key = Object.keys(req.query)[0];
+			var value = req.query[key];
+			if(items[0].hasOwnProperty(key)){
+				filteredItems = items.filter(function(item) {
+					return item[key] == value;
+				});
+				return res.status(200).send({data:filteredItems});
+			}
+			return res.status(200).send({data:items});
+		}
+	if(items[0].hasOwnProperty(key)){
+		paginatedItems = items.filter(function(item) {
+			return item[key] == value;
+		});
+	}
 	return res.status(200).send({
 		page: page,
 		per_page: pageSize,
